@@ -1,0 +1,1031 @@
+@import url("reset.css");
+/* ----------------------------------------------------------
+author:    BW Design
+email:     art@bwdesign.ru
+phones:    +7 (495)784 91 26
+           +38 (050) 690 44 23
+site:      www.bwdesign.ru
+---------------------------------------------------------- */
+
+article,aside,details,figcaption,figure,footer,logo
+header,hgroup,menu,nav,section,video {
+    display:block;
+}
+.none{
+	display: none!important;
+}
+.overflow{
+	overflow: hidden;
+}
+/** { 
+	margin: 0; 
+	padding: 0;
+}*/
+a img,
+img { 
+	border: none; 
+}
+.button{
+	cursor: pointer;
+}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+section.catalog ul,
+section.catalog ul,
+section.products ul,
+footer ul,
+nav ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	list-style: none;
+}
+a {
+	text-decoration:underline;
+	color:#016798;
+}
+a:hover {
+	color:#34ade7;
+}
+a:active {
+	outline:0;
+}
+:focus {
+	-moz-outline-style:none;
+}
+*:focus{
+	outline:none;
+}
+
+h1 {
+	color: #000;
+	font-size: 28px;
+	line-height: 32px;
+	margin: 0 0 20px 0;
+	font-weight: 100;
+}
+h2 {
+	color: #000;
+	font-size: 28px;
+	line-height: 32px;
+	margin: 0 0 20px 0;
+	font-weight: 100;
+}
+section.cart h2 ,
+section.text h2 {
+	font-size: 20px;
+	line-height: 24px;
+}
+section.text p{
+	margin-bottom: 15px;
+}
+h3 {
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+        margin: 0 0 10px 0;
+}
+
+.boxshadow{
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);		
+}
+.shadow{
+	box-shadow: 0px 3px 5px #999; 
+	-webkit-box-shadow: 0px 3px 5px #999; 
+	-moz-box-shadow:0px 3px 5px #999; 		
+}
+.corner5{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;	
+		
+}
+.corner{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;	
+}
+.tshadow{
+		text-shadow: 0px 1px 1px #000000;
+        filter: dropshadow(color=#000000, offx=0, offy=1);
+}
+
+.button, 
+/*input[type="reset"], 
+input[type="submit"], */
+input[type="button"] {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(40, 124, 189), rgb(3, 104, 154)) repeat-x scroll 0% 0% rgb(3, 104, 154);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border: 1px solid rgb(6, 87, 128);
+    cursor: pointer;
+    color: #fff;
+	max-height: 26px;
+	font-size: 12px;
+    outline: 0px none;
+    overflow: visible;
+    padding: 4px 11px 7px;
+    width: auto;
+  -webkit-transition: all .3s ease-in-out;
+	 -moz-transition: all .3s ease-in-out;
+	   -o-transition: all .3s ease-in-out;
+	  -ms-transition: all .3s ease-in-out;
+		  transition: all .3s ease-in-out;
+}
+.button:hover, 
+/*input[type="reset"]:hover, 
+input[type="submit"]:hover, */
+input[type="button"]:hover {
+    background: linear-gradient(rgb(44, 163, 225), rgb(21, 133, 187)) repeat-x scroll 0% 0% rgb(21, 133, 187);
+    border-color: #1881b6;
+
+}
+
+a.bigbutton,
+input.checkout_button,
+input.bigbutton{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(40, 124, 189), rgb(3, 104, 154)) repeat-x scroll 0% 0% rgb(3, 104, 154);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border: 1px solid rgb(6, 87, 128);
+    cursor: pointer;
+    color: #fff;
+	max-height: 47px;
+	font-size: 12px;
+    outline: 0px none;
+    overflow: visible;
+    padding: 15px 24px 17px;
+    width: auto;
+  -webkit-transition: all .3s ease-in-out;
+	 -moz-transition: all .3s ease-in-out;
+	   -o-transition: all .3s ease-in-out;
+	  -ms-transition: all .3s ease-in-out;
+		  transition: all .3s ease-in-out;
+		
+}
+a.mediumbutton,
+input.mediumbutton{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(40, 124, 189), rgb(3, 104, 154)) repeat-x scroll 0% 0% rgb(3, 104, 154);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border: 1px solid rgb(6, 87, 128);
+    cursor: pointer;
+    color: #fff;
+	max-height: 37px;
+	font-size: 16px;
+    outline: 0px none;
+    overflow: visible;
+    padding: 8px 24px 14px;
+    width: auto;
+  -webkit-transition: all .3s ease-in-out;
+	 -moz-transition: all .3s ease-in-out;
+	   -o-transition: all .3s ease-in-out;
+	  -ms-transition: all .3s ease-in-out;
+		  transition: all .3s ease-in-out;
+		
+}
+
+a.ybutton,
+input.ybutton{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(246, 232, 86), rgb(225, 160, 3)) repeat-x scroll 0% 0% rgb(225, 160, 3);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border: 1px solid #e1a003;
+    cursor: pointer;
+    color: #000;
+	max-height: 37px;
+	font-size: 16px;
+    outline: 0px none;
+    overflow: visible;
+    padding: 9px 15px 13px;
+    width: auto;
+  -webkit-transition: all .3s ease-in-out;
+	 -moz-transition: all .3s ease-in-out;
+	   -o-transition: all .3s ease-in-out;
+	  -ms-transition: all .3s ease-in-out;
+		  transition: all .3s ease-in-out;
+		
+}
+
+
+.nowrap-reset {
+	white-space:nowrap;
+	background:transparent;
+	color:#000;
+	float:none;
+	letter-spacing:default;
+	padding:0;
+}
+body, html {
+	height: 100%;
+	background: #fff;
+	width: 100%;
+	color: #333333;	
+	min-width: 960px;
+	font:13px/18px Arial,sans-serif;
+}
+header .wrap,
+footer div.wrap,
+section#hits,
+section#content{
+	clear: both;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+header{
+	margin: 0 auto 25px;
+	padding: 0;
+	height: 200px;
+	overflow: hidden;
+	width: 100%;
+}
+
+	header div#header{
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		background: url(../images/line.png) repeat-x 0 0;
+	}
+		header div#header > div{
+			height: 50px;
+			top: 0;
+			width: 50%;
+			position: absolute;
+		}
+		header div#header div.search{
+			left: 0;
+			margin-left: 110px;
+		}
+			header div#header div.search aside{
+				width: 584px;
+				float: right;
+				height: 32px;
+				padding: 10px 0 0 0;
+			}
+				header div#header div.search aside input{
+					float: left;
+					background: none;
+					border: none;
+					line-height: 32px;
+					height: 32px;
+					padding: 0;
+					margin: 0;
+				}
+					header div#header div.search aside input.input_search{
+						background: url(../images/sprite.png) no-repeat 0 0;
+						padding: 0 10px 0 40px;
+						width: 424px;
+						color: #999999; 
+					}
+					header div#header div.search aside input.button_search{
+						background: url(../images/sprite.png) no-repeat -236px -32px;
+						padding: 0;
+						width: 102px;
+						text-align: center;
+						color: #000000; 
+						cursor: pointer;
+					}
+		
+		header div#header div.cart{
+			right: 0;
+			color: #cccccc;
+			margin-right: -110px;			
+			background: #098 url(../images/line.png) repeat-x 0 -50px;
+		}
+			header div#header div.cart div.incart{
+				height: 50px;
+			}
+				header div#header div.cart div.incart.act{
+					background: #098 url(../images/line.png) repeat-x 0 -150px;
+					height: 50px;
+				}
+			header div#header div.cart div.incart > span{
+				width: 4px;
+				height: 50px;
+				float: left;
+				background: #098 url(../images/line.png) repeat-x 0 -100px;
+			}
+				header div#header div.cart div.incart.act > span{
+					background: #098 url(../images/line.png) repeat-x 0 -200px;
+				}
+			header div#header div.cart aside{
+				height: 50px;
+				padding-left: 50px;
+				width: 185px;
+				float: left; 
+				background: url(../images/sprite.png) no-repeat -443px -95px;
+			}
+			header div#header div.cart aside.act{
+				background-position: -444px -188px;
+			}
+			
+				header div#header div.cart aside p{
+					height: 50px;
+					display: table-cell;
+					vertical-align: middle;
+				}
+				header div#header div.cart aside p.act,
+				header div#header div.cart aside a{
+					color: #fff;
+				}
+			header div#header div.cart div.incart > a{
+				background: url(../images/sprite.png) no-repeat -235px -106px;
+				float: left; 
+				display: block;
+				width: 123px;
+				line-height: 30px;
+				text-align: center;
+				height: 30px;
+				font-size: 14px;
+				color: #ccc;
+				margin-top: 10px;
+				text-decoration: none;
+				cursor: pointer;
+			}
+				header div#header div.cart div.incart >  a.butta{
+					background-position: -235px -141px;
+					color: #000;
+				}
+	
+	header > div.wrap{
+		margin-top: 50px;
+	}
+		header > div.wrap span#logo{
+			float: left;
+			width: 219px;
+			height: 121px;
+			padding: 18px 20px 6px 0;
+		}
+			header > div.wrap span#logo a{
+				text-indent: -10000px;
+				background: url(../images/sprite.png) no-repeat -4px -49px;			
+				height: 121px;
+				width: 219px;
+				display: block;
+			}
+		header > div.wrap div.vcard{
+			height: 97px;
+			margin-left: 240px;
+		}
+			header > div.wrap div.vcard >div{
+				float: left;
+				padding-top: 30px;
+				color: #000; 
+			}
+				header > div.wrap div.vcard >div p{
+					margin-bottom: 7px;
+				}
+				header > div.wrap div.vcard >div.phones{
+					color: #666;
+					font-weight: bold;
+					width: 150px;
+				}
+					header > div.wrap div.vcard >div.phones strong{
+						color: #000;
+					}
+				header > div.wrap div.vcard >div.links{
+					width: 200px;
+				}
+				header > div.wrap div.vcard >div.contacts{
+					width: 194px;
+				}
+					header > div.wrap div.vcard >div.contacts p{
+						padding-left: 24px;
+						background: url(../images/sprite.png) no-repeat -442px -44px;
+					}
+					header > div.wrap div.vcard >div.contacts p.email{
+						background: url(../images/sprite.png) no-repeat -442px -73px;
+					}
+		
+		header > div.wrap nav{
+			margin-left: 240px;
+			height: 41px;
+			padding: 0;
+			background: url(../images/line.png) repeat-x 0 -250px;			
+		}
+			header > div.wrap nav ul{
+				line-height: 40px;
+				height: 41px;
+				padding: 0;
+				margin: 0;
+			}
+				header > div.wrap nav ul li{
+					height: 41px;
+					text-align: center;
+					float: left;
+					width: 113px;
+					padding-right: 2px;
+					background: url(../images/line.png) no-repeat right -332px;			
+				}
+				header > div.wrap nav ul li.last{
+					background: none;
+					width: 120px;
+					padding-right: 0;
+				}
+				header > div.wrap nav ul li.last a{
+					-moz-border-radius: 0 10px 10px 0;
+					-webkit-border-radius: 0 10px 10px 0;
+					-khtml-border-radius: 0 10px 10px 0;
+					border-radius: 0 10px 10px 0;
+					padding-right: 5px;
+				}
+				header > div.wrap nav ul li.first{
+					width: 118px;
+				}
+				header > div.wrap nav ul li.first a{
+					-moz-border-radius: 10px 0 0 10px;
+					-webkit-border-radius: 10px 0 0 10px;
+					-khtml-border-radius: 10px 0 0 10px;
+					border-radius: 10px 0 0 10px;
+					padding-left: 5px;
+				}
+				
+					header > div.wrap nav ul li a{					
+						line-height: 40px;
+						height: 41px;
+						color: #fff;
+						text-decoration: none;
+						font-weight: 700;
+						display: block;
+					}
+					header > div.wrap nav ul li a:hover{
+						background: url(../images/line.png) repeat-x right -291px;			
+					}
+section#hits{
+	height: 320px;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+	section#hits ul{
+		width: 960px;
+	}	
+					
+section#content{
+	clear: both;
+	width: 940px;
+	display: table; 
+}
+	section#content > div#cols{
+		padding: 0;
+	}
+	section#content > div#cols.left-col{
+		padding: 0 0 0 240px;
+	}
+	
+		section#content div#cols > aside.left{
+			width: 220px;			
+			float: left;
+			margin-left: -240px;
+			position: relative;
+		}
+		section#content div#cols > section.center{
+			float: left;
+			width: 100%;
+			margin-right: -100%;
+		}		
+			section#content aside section.block,
+			section#content section.center section.block{
+				clear: both;
+				margin-bottom: 35px;			
+			}	
+			section#content aside section.block{
+				margin-bottom: 25px;			
+			}
+			
+		section#content div#cols > aside.left section.catalog{
+			background: #fdfdfd url(../images/line.png) repeat-x 0 -510px;
+			
+		}
+			section#content div#cols > aside.left section.catalog h3{
+				text-align: center;
+				height: 45px;
+				line-height: 45px;
+			}
+			section#content div#cols > aside.left section.catalog  ul{				
+				width: 220px;
+			}
+				section#content div#cols > aside.left section.catalog ul li{
+					padding: 8px 17px;
+					width: 186px;
+					position: relative;					
+					z-index: 20;
+					border-bottom: 1px solid #f5f5f5;
+				}
+				section#content div#cols > aside.left section.catalog ul li.last{
+					border-bottom: none;
+					border-bottom: none;
+						-moz-border-radius: 0 0 10px 10px;
+						-webkit-border-radius: 0 0 10px 10px;
+						-khtml-border-radius: 0 0 10px 10px;
+						border-radius: 0 0 10px 10px;	
+				}
+					section#content div#cols > aside.left section.catalog ul li a{
+						text-decoration: none;
+						color: #333;
+						display: block;
+					}
+				
+					section#content div#cols > aside.left section.catalog ul li ul{
+						-webkit-transition: all .5s ease-in-out;
+						 -moz-transition: all .5s ease-in-out;
+						   -o-transition: all .5s ease-in-out;
+						  -ms-transition: all .5s ease-in-out;
+							  transition: all .5s ease-in-out;
+						opacity: 0;
+						display: none;
+						position: absolute;
+						background: #fff;
+						z-index: 1;
+						margin-left: 202px;
+						top: -2px;
+						/*-moz-border-radius: 0 10px 10px 10px;
+						-webkit-border-radius: 0 10px 10px 10px;
+						-khtml-border-radius: 0 10px 10px 10px;
+						border-radius: 0 10px 10px 10px;*/
+						border: 2px solid #f5f5f5;					
+					}
+						section#content div#cols > aside.left section.catalog > ul > li:hover{
+							background: #fff;
+						}
+						section#content div#cols > aside.left section.catalog > ul > li.has-sub:hover{
+							width: 187px;
+							z-index: 20;							
+						}
+						
+						section#content div#cols > aside.left section.catalog ul li ul li:hover{
+							background: #fdfdfd;							
+						}
+						
+						section#content div#cols > aside.left section.catalog ul li:hover > ul{
+							opacity: 1;
+							display: block;
+						}
+			
+		section#content section.center section.catalog ul,
+		section.products ul{
+			margin-left: -10px;			
+		}
+			section#content section.center section.catalog ul li div.item  > p,
+			section.products ul li div.item > p{
+				height: 55px;
+				display: table-cell;
+				width: 200px;
+				vertical-align: middle;
+			}
+		section#content div#cols section.center section.products,
+		section#content div#cols section.center section.catalog{
+			width: 700px;
+			overflow: hidden;
+		}
+		
+			section#content div#cols section.center section.products ul,
+			section#content div#cols section.center section.catalog ul{
+				width: 720px;
+			}
+		
+			section#content section.center section.catalog ul li,
+			section.products ul li{
+				float: left;
+				margin: 0 10px 20px;
+				height: 270px;
+			}
+				section#content section.center section.catalog ul li > div.item,
+				section.products ul li > div.item{
+					border: 3px solid #e7e7e7;
+					width: 200px;
+					height: 260px;
+					padding: 7px;
+				}
+					section.products ul li.featured > div.item{
+						border-color: #ffcc99;
+					}
+						section.products ul li.featured  span.hit{
+							width: 105px;
+							height: 31px;
+							line-height: 35px;
+							display: block;
+							background: url(../images/sprite.png) no-repeat -236px -69px;
+							color: #fff;
+							text-align: center;
+							position: relative;
+							top: -300px;
+							left: -3px; 
+							font-weight: bold;							
+						}
+					section#content section.center section.catalog ul li > div.item span.image,
+					section.products ul li > div.item div.image{
+						text-align: center;
+						height: 200px;
+						line-height: 200px;
+						vertical-align: middle;
+						display: block;
+					}
+						section#content section.center section.catalog ul li > div.item span.image img,
+						section.products ul li > div.item div.image img{
+							line-height: 200px;							
+							vertical-align: middle;
+						}
+						section#content section.center section.catalog ul li > div.item p{
+							text-align: center;
+						}
+						
+				section#content div#cols section.center section.products h2{
+					font-weight: 100;
+					font-size: 20px;
+					margin-bottom: 15px;
+				}
+				section#content div#cols section.center section.products h3{
+					font-weight: 100;
+					font-size: 16px;
+					margin-bottom: 15px;
+				}
+				
+			section.products ul li{
+				height: 310px;
+			}
+				section.products ul li > div.item{
+					height: 290px;
+				}
+					section.products ul li > div.item span.price{
+						float: left;
+						font-size: 16px;
+						font-weight: bold;
+						color: #000;
+						line-height: 27px;
+					}
+					section.products ul li > div.item input.button{
+						float: right;
+					}
+		section#content div#cols section.center section.blog{
+		}
+			section#content div#cols section.center section.blog article{
+				margin: 0 0 15px 0;
+			}
+				section#content div#cols section.center section.blog article span.image{
+					float: left;
+					margin: 0 10px 10px 0;
+					width: 100px;
+				}
+
+		section#content div#cols section.center section.contacts{
+		}
+			section#content div#cols section.center section.contacts p.contactsline{
+				clear: both;
+			}
+			section#content div#cols section.center section.contacts p.contactsline span{
+				float: left;
+				width: 180px;
+			}
+			section#content div#cols section.center section.contacts p.contactsline strong{
+				font-weight: 100;
+				float: left;
+			}
+			section#content div#cols section.center section.contacts p.clear{
+				height: 20px;
+			}
+
+		section#content div#cols section.center > section.product{
+		}
+			section#content div#cols section.center > section.product aside.images{
+				float: left;
+				width: 360px;
+			}
+				section#content div#cols section.center > section.product aside.images div.image{
+					width: 340px;
+					height: 340px;
+					line-height: 340px;
+					text-align: center;
+					vertical-align: middle;
+				}
+					section#content div#cols section.center > section.product aside.images div.image img{
+						border: 2px solid #e9e9e9;
+						line-height: 340px;
+						vertical-align: middle;
+					}
+				section#content div#cols section.center > section.product aside.images div.images{
+					width: 344px;
+					overflow: hidden;
+					margin-top: 15px;
+					white-space: nowrap;
+				}
+					section#content div#cols section.center > section.product aside.images div.images div.scroll{
+						width: 344px;
+						overflow: scroll;
+						white-space: nowrap;
+					}
+					section#content div#cols section.center > section.product aside.images div.images div.scroll a.zoom{
+						width: 100px;
+						border: 2px solid #e9e9e9;
+						height: 100px;
+						line-height: 100px;
+						margin-right: 16px;
+						vertical-align: middle;
+						text-align: center;
+					}
+						section#content div#cols section.center > section.product aside.images div.images div.scroll a.zoom img{
+							line-height: 104px;
+							vertical-align: middle;
+						}
+			section#content div#cols section.center > section.product section.detail{
+				margin-left: 360px;
+			}
+				section#content div#cols section.center > section.product section.detail div.form{
+					height: 50px;
+					margin-bottom: 20px;
+				}
+					section#content div#cols section.center > section.product section.detail div.form .priceline{
+						height: 30px;
+						line-height: 30px;
+						padding: 10px 15px;
+						width: 420px;
+						background: #f9f9f9;
+						color: #000;
+						font-size: 28px;
+						float: left;
+					}
+						section#content div#cols section.center > section.product section.detail div.form .priceline .bigbutton{
+							float: right;
+							margin: -10px -15px 0 0;
+						}
+					section#content div#cols section.center > section.product section.detail div.form  > a{
+						margin-left: 10px;
+						display: block;
+						width: 95px;
+						text-align: center;
+						float: left;
+						padding-top: 5px;
+					}
+		section#content div#cols section.center  section.table{
+			display: table;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+			section#content div#cols section.center  section.table .header,
+			section#content div#cols section.center  section.table .footer,
+			section#content div#cols section.center  section.table .row{
+				display: table-row;
+				vertical-align: top;
+			}
+			section#content div#cols section.center  section.table .cell{
+				display: table-cell;
+				padding: 15px 0;
+				color: #000;
+			}
+			section#content div#cols section.center  section.table .header .cell{
+				border-bottom: 1px solid #000;
+				color: #000;
+				padding: 20px 0;
+				font-weight: bold;
+			}
+			section#content div#cols section.center  section.table .row .cell{
+				vertical-align: top;
+				border-bottom: 1px solid #ccc;
+			}
+			section#content div#cols section.center  section.table .footer .cell{
+				border-top: 1px solid #000;
+				color: #000;
+				padding: 20px 0;
+				font-weight: bold;
+			}
+				section#content div#cols section.center  section.table .cell.name{
+					width: 220px;
+					padding-right: 80px;
+				}
+				section#content div#cols section.center  section.table .cell.price{
+					width: 120px;
+				}
+				section#content div#cols section.center  section.table .cell.amount{
+					width: 60px;
+					padding: 10px 60px 10px 0;
+
+				}
+					section#content div#cols section.center  section.table .cell.amount em{ 
+						font-style: normal;
+					}
+				section#content div#cols section.center  section.table .cell.price2{
+					width: 110px;
+				}
+				section#content div#cols section.center  section.table .cell.dell a{
+					color: #ff6666;
+				}
+		section#content div#cols section.center  div.cart_form{
+			color: #000;
+		}
+			section#content div#cols section.center  div.cart_form p.tabs,
+			section#content div#cols section.center  div.cart_form p.formline{
+				min-height: 42px;
+				line-height: 42px;
+			}
+				section#content div#cols section.center  div.cart_form p.tabs label,
+				section#content div#cols section.center  div.cart_form p.formline label{
+					float: left;
+					width: 180px;
+				}
+				section#content div#cols section.center  div.cart_form p.formline textarea,
+				section#content div#cols section.center  div.cart_form p.formline input{
+					width: 330px;
+					height: 30px;
+					line-height: 30px;
+					border: 1px solid #d5cfcf;
+					background: #fff;
+					padding: 5px;
+					box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+					-webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+					-moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+				}
+				section#content div#cols section.center  div.cart_form p.formline textarea{
+					height: 80px;
+				}
+			section#content div#cols section.center  div.cart_form p.clear{
+				height: 15px;
+			}
+			section#content div#cols section.center  div.cart_form p.tabs{
+				margin-bottom: 30px;
+			}
+				section#content div#cols section.center  div.cart_form p.tabs a{
+					margin-right: 40px;
+					text-decoration: none;
+					border-bottom: 1px dashed #016798;
+				}
+				section#content div#cols section.center  div.cart_form p.tabs a.active{
+					border-bottom: none;
+					color: #000;
+					font-weight: bold;
+				}
+			section#content div#cols section.center  div.cart_form div.panel{
+				margin-bottom: 30px;
+			}
+				
+div#breadcrumb{
+	margin-bottom: 15px;
+}					
+footer{
+	background: #f7f7f7;
+	padding: 15px 0;
+}
+	footer div.left{
+		width: 360px;
+                margin-right: 40px;
+	}
+		footer div.left ul{
+		
+		}
+			footer div.left ul li{
+				float: left;
+				width: 33%;
+			}
+	footer div.right{
+		width: 300px;
+	}
+		footer div.right p{
+			float: right;
+			width: 130px;
+		}
+		footer div.right p.copy{
+			float: left;
+			width: 170px;
+		}
+	footer div.center{
+		margin: 0 320px0 380px;
+	}
+        a.copy { color: #000; text-decoration: none; border-bottom: 2px solid #fcc331;font-weight:700;}
+        a.copy:hover {color: #fcc331; border-bottom: none;}
+	
+.dialog p.line {
+}	
+	.dialog p.line label{
+		height: 40px;
+		line-height: 20px;
+		color: #000;
+		font-size: 12px;
+		float: left;
+		width: 110px;
+		margin-right: 10px; 
+	}	
+	.dialog p.line input{
+		height: 30px;
+		line-height: 30px;
+		border: 1px solid #d5cfcf;
+		background: #fff;
+		padding: 5px;
+		width: 205px;
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+		-webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+		-moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+		
+	}
+.dialog p.clear {
+	height: 20px;
+}	
+.dialog p.center {
+	text-align: center;
+}
+.dialog div.amountline {
+	height: 30px;
+}	
+	.dialog div.amountline  p{
+		height: 32px;
+		float: left;
+		width: 260px;
+		margin-right: 10px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.dialog div.amountline  div.amount{
+		height: 32px;
+		float: right;
+		width: 62px;
+	}
+		section#content div#cols section.center  section.table .cell.amount input,
+		.dialog div.amountline  div.amount input{
+			height: 20px;
+			line-height: 20px;
+			float: left;
+			margin-right: 2px;
+			border: 1px solid #d5cfcf;
+			color: #000;
+			background: #fff;
+			padding: 5px;
+			width: 30px;
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+			-webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+			-moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+		}
+		section#content div#cols section.center  section.table .cell.amount span,
+		.dialog div.amountline  div.amount span{
+			float: right;
+			height: 15px;
+			width: 15px;
+			text-indent: -100000px;
+			margin-bottom: 2px;
+			cursor: pointer;
+		}
+			section#content div#cols section.center  section.table .cell.amount span.plus,
+			.dialog div.amountline  div.amount span.plus{
+				background: url(../images/sprite.png) no-repeat -436px -154px;
+			}
+			section#content div#cols section.center  section.table .cell.amount span.minus,
+			.dialog div.amountline  div.amount span.minus{
+				background: url(../images/sprite.png) no-repeat -436px -171px;
+			}

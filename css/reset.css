@@ -1,0 +1,243 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong {
+	font-weight: bold;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: transparent;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #f9f9f9;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #f0f0f0;
+	position: relative;
+	top: -1px;
+	height: 15px!important;
+	left: 0;
+	cursor: pointer;
+	border: 1px solid #d0d0d0;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #fff  url(../images/sprite.png) no-repeat -462px -152px;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	width: 17px;
+	height: 17px;
+}
+.jspArrowLeft {
+	background: #fff  url(../images/sprite.png) no-repeat -462px -169px;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 17px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	height: 17px!important;
+	width: 17px;
+	top: -1px;
+	position: relative;
+	float: left;
+	height: 100%;
+}
+
+.jspArrowRight {
+	width: 20px!important;
+	background: #fff  url(../images/sprite.png) no-repeat -461px -152px;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+.dialog{
+	background: #fff;
+	padding: 50px;
+	width: 340px;
+}
+.dialog h3.header {
+	font-size: 20px;
+	color: #000;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+	.dialog h3.header  a.close{
+		float: right;
+		color: #ff6666;
+		font-size: 13px;
+	}
+
+ul#deliveries{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	border: 1px solid #e0e0e0;
+	padding: 20px 20px 0 20px;
+	list-style: none;
+}
+ul#deliveries li{
+	margin-bottom: 20px;
+}
+ul#deliveries li div.checkbox{
+	float: left;
+}
+ul#deliveries li h3, ul#deliveries li .description{
+	display: block;
+	margin-left: 25px;
+}
+/* @end */
+
+
+/* @group Кабинет */
+#orders_history
+{
+	list-style: none;
+}
+#orders_history li
+{
+	margin-bottom: 10px;
+}
+#orders_history li a
+{
+	font-size: 16px;
+}
+/* @end — Кабинет */
+
+/* Сообщение с ошибкой */
+.message_error{
+	clear: both;
+	height: 18px;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	overflow: hidden;
+	color: red;
+	background-color: #ffcaca;
+	border: 1px dotted #ff4545;
+}
+
+/* @end */
+/* @group Детали заказа */
+table.order_info
+{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+}
+table.order_info td
+{
+	padding: 10px;
+	border: 1px dotted #e0e0e0;
+	font-size: 14px;
+}
+	.autocomplete-w1 { position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; }
+	.autocomplete { border:1px solid #999; background:#FFF; width: 480px!important; cursor:default; text-align:left; overflow-x:auto;  overflow-y: auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+	.autocomplete .selected { background:#F0F0F0; }
+	.autocomplete div { padding:2px 5px; white-space:nowrap; }
+	.autocomplete strong { font-weight:normal; color:#3399FF; }
